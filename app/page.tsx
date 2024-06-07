@@ -12,6 +12,7 @@ export default async function Home() {
       {todos.map((todo) => (
         <Taskbox
           key={todo.id}
+          id = {todo.id}
           task={todo.todotext}
           time={todo.todotime}
           done={todo.done}
